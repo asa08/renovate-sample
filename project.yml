@@ -1,0 +1,26 @@
+name: renovate-sample
+targets:
+  renovate-sample:
+    type: application
+    platform: iOS
+    sources:
+      - path: renovate-sample
+    settings:
+      base:
+        INFOPLIST_FILE: renovate-sample/Info.plist
+        DEVELOPMENT_LANGUAGE: jp
+#  renovate-sampleTests:
+#    type: bundle.unit-test
+#  renovate-sampleUITests:
+#    type: bundle.ui-testing
+settings:
+  base:
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+packages:
+  Kingfisher:
+    url: https://github.com/onevcat/Kingfisher
+    from: 6.0.0
+  Lottie:
+    url: https://github.com/airbnb/lottie-ios.git
+    from: 3.0.0
